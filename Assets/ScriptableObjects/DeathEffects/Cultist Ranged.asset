@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd20a6915efdb14388c7705d81eafcd, type: 3}
+  m_Name: Cultist Ranged
+  m_EditorClassIdentifier: 
+  deathObjects:
+  - {fileID: 1726907052594776, guid: 89ebb36bfed02b5478cb0c297f1e633b, type: 2}
+  forceLayer:
+    serializedVersion: 2
+    m_Bits: 579584
+  deathObjectForceMultiplier: 5
+  deathParticle: {fileID: 1850012038665842, guid: 140867d9e92e79e44bd3076242505933,
+    type: 2}
+  deathSounds:
+  - {fileID: 8300000, guid: 4a74f3bcb932a8445b88c0e8d925773e, type: 3}
+  - {fileID: 8300000, guid: 52331b93564972748975b5e33a096c19, type: 3}
+  - {fileID: 8300000, guid: bd360397832acd44f8edbf46cf7c1b09, type: 3}

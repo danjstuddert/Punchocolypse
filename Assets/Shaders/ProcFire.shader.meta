@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dfc514f49aa130c49a215ca3bb193b2d
+timeCreated: 1542536132
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _mask02: {fileID: 2800000, guid: 058827299af00354090f2ce53a449a6b, type: 3}
+  - _FireMask01: {fileID: 2800000, guid: 88ba0a0ec81070e469245f326ee1b2a4, type: 3}
+  - _FireMask02: {fileID: 2800000, guid: 88ba0a0ec81070e469245f326ee1b2a4, type: 3}
+  - _fire: {fileID: 2800000, guid: 88ba0a0ec81070e469245f326ee1b2a4, type: 3}
+  - _node_2736: {fileID: 2800000, guid: 058827299af00354090f2ce53a449a6b, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

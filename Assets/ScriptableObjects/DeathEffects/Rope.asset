@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd20a6915efdb14388c7705d81eafcd, type: 3}
+  m_Name: Rope
+  m_EditorClassIdentifier: 
+  deathObjects:
+  - {fileID: 1532399540088862, guid: 1afe7fea7e022e046afa9f604bf704c9, type: 2}
+  forceLayer:
+    serializedVersion: 2
+    m_Bits: 579584
+  deathObjectForceMultiplier: 5
+  deathParticle: {fileID: 1924181928879624, guid: 49011925d2aa02a4f8029786f5c30e2d,
+    type: 2}
+  deathSounds:
+  - {fileID: 8300000, guid: 3a1725bae96e56e45942fbe12bdce2a2, type: 3}
+  - {fileID: 8300000, guid: ec8e7501839ecdf4d994a531082881e2, type: 3}
+  - {fileID: 8300000, guid: 5589f9401e5c86c4bb1476c377f76b9a, type: 3}

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd20a6915efdb14388c7705d81eafcd, type: 3}
+  m_Name: Bodies
+  m_EditorClassIdentifier: 
+  deathObjects:
+  - {fileID: 1402984989883436, guid: fe3009c7df09b144eb91783570efa55c, type: 2}
+  forceLayer:
+    serializedVersion: 2
+    m_Bits: 579584
+  deathObjectForceMultiplier: 5
+  deathParticle: {fileID: 1532399540088862, guid: 1afe7fea7e022e046afa9f604bf704c9,
+    type: 2}
+  deathSounds:
+  - {fileID: 8300000, guid: 5229e99c50f0cc6418a103947e9f1c5b, type: 3}
+  - {fileID: 8300000, guid: 60780e324e8a61e478b21c3d48441d78, type: 3}
+  - {fileID: 8300000, guid: 29fa9773f9add644e83bfab9daf16af6, type: 3}
+  - {fileID: 8300000, guid: 89550b32ad3287841aa85d0bb9346e79, type: 3}

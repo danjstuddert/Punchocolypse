@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd20a6915efdb14388c7705d81eafcd, type: 3}
+  m_Name: Wooden
+  m_EditorClassIdentifier: 
+  deathObjects:
+  - {fileID: 1839143234022096, guid: e3b7394b91be3cc4c9cc8bcec07e83e3, type: 2}
+  forceLayer:
+    serializedVersion: 2
+    m_Bits: 579584
+  deathObjectForceMultiplier: 5
+  deathParticle: {fileID: 1532399540088862, guid: 1afe7fea7e022e046afa9f604bf704c9,
+    type: 2}
+  deathSounds:
+  - {fileID: 8300000, guid: ed189bb7ef1706c4a8e58938d6297e1b, type: 3}
+  - {fileID: 8300000, guid: 63bc33abca96075449185cd2d2b3d238, type: 3}
+  - {fileID: 8300000, guid: fd36f61d99d444943ad8f86a042bb0dd, type: 3}
+  - {fileID: 8300000, guid: aff202db078d44e4fa373b18c5bb2731, type: 3}
+  - {fileID: 8300000, guid: 1d06a7c589433d74aa53b708e6cc7299, type: 3}
+  - {fileID: 8300000, guid: 0bb5db24cabb37d4ea3c79b2c730f36c, type: 3}
