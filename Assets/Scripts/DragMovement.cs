@@ -5,6 +5,9 @@ using Valve.VR.InteractionSystem;
 
 public class DragMovement : MonoBehaviour
 {
+    [SerializeField] private float minDragDistance;
+    [SerializeField] private float movementAmount = 2f;
+
     private Hand currentHand;
 
     private Transform playArea;
@@ -12,7 +15,6 @@ public class DragMovement : MonoBehaviour
     private Vector3 currentGrabPosition;
     private Vector3 dragDirection;
 
-    public float movementAmount = 2f;
     private Transform m_transform;
     private void Awake()
     {
@@ -31,7 +33,7 @@ public class DragMovement : MonoBehaviour
 
     private bool CheckForInput()
     {
-       if( currentHand.controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
+       if(currentHand != null && currentHand.controller != null && currentHand.controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         return true;
 
         return false;
@@ -40,16 +42,16 @@ public class DragMovement : MonoBehaviour
 
     private void UpdateMovement()
     {
-        //if hand has not moved, return
-        if(m_transform.position == lastGrabPosition) return;
+        //if hand has not moved greater than min drag distance, return
+        if(m_transform.position.DirectionTo(lastGrabPosition).sqrMagnitude < minDragDistance) return;
 
         currentGrabPosition = m_transform.position;
 
-        dragDirection = currentGrabPosition.DirectionTo(transform.position, true);
-        playArea.Translate(dragDirection * movementAmount * Time.deltaTime);
+        dragDirection = currentGrabPosition.DirectionTo(lastGrabPosition, true);
+        dragDirection = dragDirection.Flat();
 
+        playArea.transform.position += dragDirection * (movementAmount * Time.deltaTime);
         lastGrabPosition = transform.position;
-
     }
 
 }
