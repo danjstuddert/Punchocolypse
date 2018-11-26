@@ -16,6 +16,17 @@ TagManager:
   - Quiver
   - projectile
   - TetherArrow
+  - Prop
+  - SpawnPoint
+  - BowAnchor
+  - Torch
+  - Target
+  - ChainAttachPoint
+  - OffScreenIndicator
+  - Checkpoint
+  - Teleport
+  - Key
+  - Cog
   layers:
   - Default
   - TransparentFX
@@ -27,7 +38,7 @@ TagManager:
   - 
   - Entity
   - Player
-  - 
+  - Environment
   - 
   - 
   - 
