@@ -19,7 +19,6 @@ public class DamageablePlayer : Affectable
 
     [Header("Overlay")]
     [SerializeField] private GameObject faceSphere;
-    [SerializeField] private string dissolveShaderHandle;
     [SerializeField] private float dissolveInTime;
     [SerializeField] private AnimationCurve dissolveInCurve;
     [SerializeField] private float dissolveOutWait;
@@ -194,9 +193,6 @@ public class DamageablePlayer : Affectable
             faceSphere.SetActive(true);
 
         float spherePercent = Mathf.Lerp(faceSpherePercent, faceSpherePercent - hitDamagePercent, regenCount/ healthRegenTime);
-
-        if(faceSphereRenderer.material.GetFloat(dissolveShaderHandle) != spherePercent)
-            faceSphereRenderer.material.SetFloat(dissolveShaderHandle, spherePercent);
     }
 
     private void AdjustFaceSphere()
@@ -215,20 +211,6 @@ public class DamageablePlayer : Affectable
 
         float t = 0f;
         isScaling = true;
-
-        float startValue = faceSphereRenderer.material.GetFloat(dissolveShaderHandle);
-
-        while (t <= dissolveInTime)
-        {
-            t += Time.deltaTime;
-
-            faceSphereRenderer.material.SetFloat(dissolveShaderHandle,
-                Mathf.LerpUnclamped(startValue, faceSpherePercent, dissolveInCurve.Evaluate(t / dissolveInTime)));
-
-            yield return null;
-        }
-
-        faceSphereRenderer.material.SetFloat(dissolveShaderHandle, faceSpherePercent);
 
         yield return new WaitForSeconds(dissolveOutWait);
 

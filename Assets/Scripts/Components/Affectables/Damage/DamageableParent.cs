@@ -53,10 +53,6 @@ public class DamageableParent : MonoBehaviour {
             }
         }
 
-        Entity e = GetComponent<Entity>();
-        if (e != null)
-            EntityController.Instance.EntityKilled(e);
-
         yield return new WaitForEndOfFrame();
         Destroy(gameObject);
     }
